@@ -7,3 +7,4 @@ DVPNSDK v3.9
 .env.prod.yaml
 .env.staging.yaml
 .env.dev.yaml
+.env.prod.yaml

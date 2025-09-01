@@ -9,6 +9,7 @@ import paymentProfileRoutes from './payment-profiles';
 import simRoutes from './sims';
 import topupRoutes from './topup';
 import vpnRoutes from './vpn';
+import utilRoutes from './utils';
 
 export default function createRoutes(services: Services): Router {
   const router = Router();
@@ -22,6 +23,7 @@ export default function createRoutes(services: Services): Router {
   router.use('/', paymentProfileRoutes(services));
   router.use('/', topupRoutes(services));
   router.use('/', healthRoutes());
+  router.use('/utils', utilRoutes(services))
 
   return router;
 }

@@ -1,0 +1,26 @@
+meta {
+  name: Swap Refs
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/utils/swap-ref
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "swaps": [
+      {
+        "from": "sims/GnfF629ozG9qb7XujR9xfuDWez8tEqdcbJhFs36BF2tG/22195851841747742401",
+        "to": "sims/DyVd5DpMfq8UG8WQDaYiCaALpXDrVGzj3CHB5cZ7Vor1/18209386867206084731"
+      }
+    ]
+  }
+}
+
+settings {
+  encodeUrl: true
+}
